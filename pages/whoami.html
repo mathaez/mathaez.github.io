@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Qui suis-je ? | Mathis Nicolas</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div id="header-placeholder"></div>
+
+  <section class="whoami-container">
+    <h1>Qui suis-je ?</h1>
+    <div class="intro">
+      <img src="/images/mathis.png" alt="Photo de Mathis Nicolas" class="photo" />
+      <p>
+        Bonjour, je suis Mathis Nicolas, développeur web junior de 23 ans basé à Quimper. Passionné par la création
+        d'applications et de sites modernes et fonctionnels, j’aide les commerces et indépendants à gagner en visibilité
+        sur le web grâce à des solutions sur-mesure, simples et efficaces. J’attache une grande importance au travail
+        en proximité avec mes clients afin de bien comprendre leurs besoins et proposer des projets parfaitement adaptés.
+      </p>
+    </div>
+
+    <h2>Mon parcours</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-date">2020-2022</div>
+        <div class="timeline-content">
+          <h3>Licence Informatique & Sciences pour l’Ingénieur</h3>
+          <p>UBO Brest</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">2022-2024</div>
+        <div class="timeline-content">
+          <h3>BTS Services Informatiques aux Organisations</h3>
+          <p>Chaptal Quimper</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">2024-2026</div>
+        <div class="timeline-content">
+          <h3>Maîtrise Concepteur et Développeur d’Applications</h3>
+          <p>ENI Quimper</p>
+        </div>
+      </div>
+    </div>
+
+    <h2>Mes compétences</h2>
+    <div class="skills">
+      <div class="skill">
+        <span>HTML</span>
+        <div class="progress-bar"><div class="progress" data-progress="90%"></div></div>
+      </div>
+      <div class="skill">
+        <span>CSS</span>
+        <div class="progress-bar"><div class="progress" data-progress="85%"></div></div>
+      </div>
+      <div class="skill">
+        <span>JavaScript</span>
+        <div class="progress-bar"><div class="progress" data-progress="80%"></div></div>
+      </div>
+      <div class="skill">
+        <span>PHP</span>
+        <div class="progress-bar"><div class="progress" data-progress="70%"></div></div>
+      </div>
+      <div class="skill">
+        <span>SQL</span>
+        <div class="progress-bar"><div class="progress" data-progress="75%"></div></div>
+      </div>
+    </div>
+  </section>
+<div class="map-container">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2696.199086405224!2d-4.095707384447201!3d47.99636357921069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x481066a847621dbb%3A0x62a3071e07a92d64!2sQuimper!5e0!3m2!1sfr!2sfr!4v1687145670123!5m2!1sfr!2sfr"
+    width="100%"
+    height="300"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+  <footer>
+    <p>© 2025 Mathis Nicolas. Tous droits réservés.</p>
+  </footer>
+
+  <script>
+    fetch('/header.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      });
+  </script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

@@ -5,27 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Services | Web Breizh Mathis</title>
   <link rel="stylesheet" href="/style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
 
   <div id="header-placeholder"></div>
 
-  <section class="container">
-    <h2>Mes services</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Site Vitrine</h3>
-        <p>Création de sites simples, modernes et responsives pour restaurants, bars, et indépendants.</p>
-      </div>
-      <div class="card">
-        <h3>Maintenance</h3>
-        <p>Mises à jour, modifications du menu, maintenance technique après mise en ligne.</p>
-      </div>
-      <div class="card">
-        <h3>Référencement</h3>
-        <p>Optimisation pour être visible sur Google et attirer plus de clients locaux.</p>
+  <section class="container services-section">
+    <h2>Mes services : </h2>
+<br>
+    <div class="service-line">
+      <i class="fas fa-laptop-code service-icon"></i>
+      <div class="service-content">
+        <h3>Création de site vitrine <small class="prix-indicatif">— à partir de 199€</small></h3>
+        <p>Je conçois des sites vitrines modernes, responsives (adaptés à tous types d’appareils) et parfaitement calibrés pour votre activité. Idéal pour les commerces souhaitant une présence en ligne efficace, avec un design sur-mesure et une expérience utilisateur soignée.</p>
+        <p class="service-note">Un devis gratuit est réalisé avant chaque projet, avec un tarif modulable selon vos besoins, le design et les fonctionnalités souhaitées.</p>
+    </div>
+    </div>
+
+    <div class="service-line">
+      <i class="fas fa-tools service-icon"></i>
+      <div class="service-content">
+        <h3>Maintenance évolutive <small class="prix-indicatif">— à partir de 39€</small></h3>
+        <p>Besoin de mettre à jour vos horaires, modifier une page ou corriger un bug ? Je propose des forfaits de maintenance flexibles, adaptés à vos besoins après la mise en ligne de votre site.</p>
+         <p class="service-note">Pour les demandes plus importantes (mise à jour majeure, ajout de pages, refonte complète…), un devis personnalisé est établi.</p>
+    </div>
+    </div>
+
+    <div class="service-line">
+      <i class="fas fa-search-location service-icon"></i>
+      <div class="service-content">
+        <h3>Référencement local (SEO) de base<small class="prix-indicatif">— à partir de 99€</small></h3>
+        <p>Optimisation technique de votre site : structure propre, balises pertinentes, temps de chargement rapide. Je vous accompagne pour améliorer votre visibilité dans les recherches locales et attirer davantage de clients dans votre région.</p>
       </div>
     </div>
+
+    <div class="devis-container">
+  <button id="btn-devis">Je veux mon devis</button>
+</div>
+
+
+<section class="guarantees-simple">
+  <h3>Mes garanties</h3>
+  <p>
+    Je m'engage à respecter les délais, assurer un suivi personnalisé, et garantir la qualité du travail réalisé. Chaque projet est adapté à vos besoins, avec une transparence totale sur les tarifs. De plus, je propose un support gratuit pendant 1 mois après la livraison pour toute modification nécessaire.
+  </p>
+</section>
+
+<section class="support-training">
+  <h3>Accompagnement & Formation</h3>
+  <p>
+    Je peux créer une documentation ou des mini-formations personnalisées pour vous permettre de modifier facilement certains éléments de votre site.  
+    Ce service est proposé en option, avec un tarif adapté selon vos besoins.
+  </p>
+</section>
+
+
   </section>
 
   <footer>
@@ -40,6 +75,6 @@
       });
   </script>
 
-  <script src="script.js"></script>
+  <script src="/js/app.js"></script>
 </body>
 </html>
