@@ -1,11 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Mathis</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mathis | Développeur Web Freelance</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
 <body>
-    <h1>Bienvenue sur mon portfolio !!!!!</h1>
+    
+<div id="header-placeholder"></div>
+
+  <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      });
+  </script>
+
+  <section class="hero">
+  <h2>Des sites web sur-mesure pour les petits commerces bretons</h2>
+  <a href="/pages/services.html" class="btn">Découvrir mes services</a>
+</section>
+
+
+ <section class="home-cards">
+  <div class="card">
+    <h3>Services</h3>
+    <p>Sites vitrines, maintenance, SEO local…</p>
+    <a href="/pages/services.html">En savoir plus</a>
+  </div>
+  <div class="card">
+    <h3>Qui suis-je</h3>
+    <p>Je suis Mathis, développeur web freelance à Quimper.</p>
+    <a href="/pages/whoami.html">En savoir plus</a>
+  </div>
+  <div class="card">
+    <h3>Me contacter</h3>
+    <p>Besoin d’un site ? Discutons ensemble !</p>
+    <a href="/pages/contact.html">Me contacter</a>
+  </div>
+</section>
+
+  <footer>
+    <p>© 2025 Mathis Nicolas. Tous droits réservés.</p>
+    <p id="clock" style="margin-top: 10px; font-size: 0.9rem;"></p>
+  </footer>
+
+  <script src="js/app.js"></script>
+  
 </body>
 </html>

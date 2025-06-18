@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services | Web Breizh Mathis</title>
+  <link rel="stylesheet" href="/style.css"/>
+</head>
+<body>
+
+  <div id="header-placeholder"></div>
+
+  <section class="container">
+    <h2>Mes services</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Site Vitrine</h3>
+        <p>Création de sites simples, modernes et responsives pour restaurants, bars, et indépendants.</p>
+      </div>
+      <div class="card">
+        <h3>Maintenance</h3>
+        <p>Mises à jour, modifications du menu, maintenance technique après mise en ligne.</p>
+      </div>
+      <div class="card">
+        <h3>Référencement</h3>
+        <p>Optimisation pour être visible sur Google et attirer plus de clients locaux.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Mathis Nicolas. Tous droits réservés.</p>
+  </footer>
+
+  <script>
+    fetch('/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      });
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
