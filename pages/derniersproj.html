@@ -1,4 +1,58 @@
-<section id="portfolio" class="container">
-    <h2>Projets récents</h2>
-    <p>Bientôt en ligne…</p>
-  </section>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Derniers Projets | Web Breizh Mathis</title>
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <div id="header-placeholder"></div>
+
+  <main class="container projets-wrapper">
+  <h1>Derniers projets</h1>
+
+  <div class="projects-grid">
+    <article class="project-card">
+      <img src="/images/mdq.jpg" alt="Site web Maison de Quartier du Moulin Vert" />
+      <div class="project-info">
+        <h3>Site vitrine - Maison de Quartier du Moulin Vert</h3>
+        <p>Développement d’un site vitrine simple et fonctionnel pour cette maison de quartier. Projet réalisé lors de mon stage, une première expérience d’intégration web.</p>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <img src="/images/cerveau.jpg" alt="Projet startup Neurosciences" />
+      <div class="project-info">
+        <h3>Startup Neuro-sciences et IA</h3>
+        <p>Participation au développement web pour une startup innovante en neuro-sciences, avec un focus sur des solutions digitales adaptées aux besoins spécifiques du secteur.</p>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <img src="/images/code.jpg" alt="Application de supervision PHP" />
+      <div class="project-info">
+        <h3>Application de supervision </h3>
+        <p>Travail en alternance sur une application de supervision développée en back-end PHP Symfony, incluant la maintenance, l’évolution des fonctionnalités et l’amélioration de l’interface utilisateur.</p>
+      </div>
+    </article>
+  </div>
+</main>
+
+
+  <footer>
+    <p>© 2025 Mathis Nicolas. Tous droits réservés.</p>
+  </footer>
+
+  <script>
+    fetch('/header.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      });
+  </script>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
